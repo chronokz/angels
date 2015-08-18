@@ -14,6 +14,10 @@
     <sprite>sprites\spr_score</sprite>
     <sprite>sprites\spr_btn</sprite>
     <sprite>sprites\spr_cursor</sprite>
+    <sprites name="menu">
+      <sprite>sprites\spr_lightside</sprite>
+      <sprite>sprites\spr_darkside</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_menu</background>
@@ -21,6 +25,10 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_btn.gml</script>
+    <scripts name="src_cursor">
+      <script>scripts\pointer.gml</script>
+      <script>scripts\regular.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_sans</font>
@@ -38,9 +46,12 @@
       <object>objects\obj_options</object>
       <object>objects\obj_achivments</object>
       <object>objects\obj_exit</object>
+      <object>objects\obj_darkside</object>
+      <object>objects\obj_lightside</object>
     </objects>
     <object>objects\obj_cursor</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\menu</room>
     <room>rooms\lvl_1</room>
