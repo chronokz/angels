@@ -12,11 +12,19 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_enemy_bat</sprite>
     <sprite>sprites\spr_score</sprite>
+    <sprite>sprites\spr_btn</sprite>
+    <sprite>sprites\spr_cursor</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_menu</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_btn.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_sans</font>
+    <font>fonts\fnt_play</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -25,8 +33,16 @@
     <object>objects\obj_enemy_bat</object>
     <object>objects\obj_scrore</object>
     <object>objects\obj_edge</object>
+    <objects name="menu">
+      <object>objects\obj_new_game</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_achivments</object>
+      <object>objects\obj_exit</object>
+    </objects>
+    <object>objects\obj_cursor</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\lvl_1</room>
   </rooms>
   <help>
