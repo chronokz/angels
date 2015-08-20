@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_storm</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_edge</sprite>
     <sprite>sprites\spr_field</sprite>
@@ -18,9 +20,11 @@
       <sprite>sprites\spr_lightside</sprite>
       <sprite>sprites\spr_darkside</sprite>
     </sprites>
+    <sprite>sprites\spr_title</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bck_menu</background>
+    <background>background\bg_clouds</background>
+    <background>background\bg_menu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -29,10 +33,14 @@
       <script>scripts\pointer.gml</script>
       <script>scripts\regular.gml</script>
     </scripts>
+    <script>scripts\scr_darken.gml</script>
+    <script>scripts\scr_normalen.gml</script>
+    <script>scripts\scr_draw_text_center.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_sans</font>
     <font>fonts\fnt_play</font>
+    <font>fonts\fnt_rain</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -41,6 +49,7 @@
     <object>objects\obj_enemy_bat</object>
     <object>objects\obj_scrore</object>
     <object>objects\obj_edge</object>
+    <object>objects\obj_title</object>
     <objects name="menu">
       <object>objects\obj_new_game</object>
       <object>objects\obj_options</object>
@@ -51,7 +60,6 @@
     </objects>
     <object>objects\obj_cursor</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\menu</room>
     <room>rooms\lvl_1</room>
