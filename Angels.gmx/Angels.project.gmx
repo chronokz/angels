@@ -25,6 +25,9 @@
   <backgrounds name="background">
     <background>background\bg_clouds</background>
     <background>background\bg_menu</background>
+    <backgrounds name="Levels">
+      <background>background\bg_church</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
